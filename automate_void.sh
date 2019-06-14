@@ -2,8 +2,6 @@
 
 #nm-applet fonts noto-fonts display manager
 
-cd 
-
 git clone https://github.com/thisSyntaxSucksAndYouKnowIt/config_files
 
 cd config_files

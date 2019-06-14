@@ -16,9 +16,6 @@ mv .Xresources /home/$(whoami)
 
 sudo mv xinitrc /etc/X11/xinit
 
-cd
-mkdir .vim
-
 echo "Updating system"
 sudo xbps-install -Su
 
@@ -62,6 +59,8 @@ echo "Installing Vim"
 sudo xbps-install -S vim
 
 echo "Installing Vim plugins"
+cd/home/$(whoami)
+mkdir .vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim -c VundleUpdate
 

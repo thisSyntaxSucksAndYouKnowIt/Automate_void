@@ -9,7 +9,7 @@ mv vimrc .vimrc
 mv .vimrc /home/$(whoami)
 
 mv Xresources .Xresources
-mv Xresources /home/$(whoami)
+mv .Xresources /home/$(whoami)
 
 sudo mv xinitrc /etc/X11/xinit
 

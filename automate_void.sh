@@ -62,7 +62,7 @@ echo "Installing Vim plugins"
 cd/home/$(whoami)
 mkdir .vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim -c VundleUpdate
+vim +PluginInstall +qall
 
 echo "Installing Git"
 sudo xbps-install -S git

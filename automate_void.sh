@@ -5,12 +5,18 @@
 cd
 cd git
 
+read a
+
 git clone https://github.com/thisSyntaxSucksAndYouKnowIt/config_files
 
-cd config_files
-mv vimrc .vimrc
-mv .vimrc /home/$(whoami)
+read a
 
+cd config_files
+read a
+mv vimrc .vimrc
+read a
+mv .vimrc /home/$(whoami)
+read a
 mv Xresources .Xresources
 mv .Xresources /home/$(whoami)
 
@@ -59,13 +65,10 @@ echo "Installing Vim"
 yes | sudo xbps-install -S vim
 
 echo "Installing Vim plugins"
-cd/home/$(whoami)
+cd /home/$(whoami)
 mkdir .vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
-
-echo "Installing Git"
-yes | sudo xbps-install -S git
 
 echo "Installing Neofetch"
 yes | sudo xbps-install -S neofetch

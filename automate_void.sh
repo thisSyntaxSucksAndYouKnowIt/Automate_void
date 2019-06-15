@@ -1,6 +1,8 @@
 #!/bin/bash
 
 #nm-applet fonts noto-fonts display manager
+user = $(whoami)
+sudo
 
 echo "Updating system"
 yes | sudo xbps-install -Su
@@ -53,9 +55,9 @@ git clone https://github.com/thisSyntaxSucksAndYouKnowIt/config_files
 cd config_files
 mv xinitrc /etc/X11/xinit
 mv Xresources .Xresources
-mv .Xresources /home/$(whoami)
+mv .Xresources /home/$user
 mv vimrc .vimrc
-mv .vimrc /home/$(whoami)
-mkdir /home/$(whoami)/.vim
+mv .vimrc /home/$user
+mkdir /home/$user/.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall

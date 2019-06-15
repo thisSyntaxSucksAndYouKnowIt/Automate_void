@@ -4,24 +4,17 @@
 
 git clone https://github.com/thisSyntaxSucksAndYouKnowIt/config_files
 
-read a
-
 cd config_files
-read a
-mv vimrc .vimrc
-read a
-mv .vimrc /home/$(whoami)
-read a
 mv Xresources .Xresources
 mv .Xresources /home/$(whoami)
 
-sudo mv xinitrc /etc/X11/xinit
 
 echo "Updating system"
 yes | sudo xbps-install -Su
 
 echo "Installing xorg"
 yes | sudo xbps-install -S xorg
+sudo mv xinitrc /etc/X11/xinit
 
 echo "Installing alsa-utils"
 yes | sudo xbps-install -S alsa-utils
@@ -60,6 +53,8 @@ echo "Installing Vim"
 yes | sudo xbps-install -S vim
 
 echo "Installing Vim plugins"
+mv vimrc .vimrc
+mv .vimrc /home/$(whoami)
 cd /home/$(whoami)
 mkdir .vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

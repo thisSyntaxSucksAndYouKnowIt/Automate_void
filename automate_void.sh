@@ -2,7 +2,6 @@
 
 #nm-applet fonts noto-fonts display manager
 user_name=$(whoami)
-sudo
 
 echo "Updating system"
 yes | sudo xbps-install -Su

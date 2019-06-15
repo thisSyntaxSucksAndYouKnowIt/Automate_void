@@ -52,7 +52,7 @@ yes | sudo xbps-install -S neofetch
 git clone https://github.com/thisSyntaxSucksAndYouKnowIt/config_files
 
 cd config_files
-mv xinitrc /etc/X11/xinit
+sudo mv xinitrc /etc/X11/xinit
 mv Xresources .Xresources
 mv .Xresources /home/$user_name
 mv vimrc .vimrc

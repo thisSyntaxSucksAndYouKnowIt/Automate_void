@@ -2,19 +2,11 @@
 
 #nm-applet fonts noto-fonts display manager
 
-git clone https://github.com/thisSyntaxSucksAndYouKnowIt/config_files
-
-cd config_files
-mv Xresources .Xresources
-mv .Xresources /home/$(whoami)
-
-
 echo "Updating system"
 yes | sudo xbps-install -Su
 
 echo "Installing xorg"
 yes | sudo xbps-install -S xorg
-sudo mv xinitrc /etc/X11/xinit
 
 echo "Installing alsa-utils"
 yes | sudo xbps-install -S alsa-utils
@@ -52,13 +44,18 @@ yes | sudo xbps-install -S radare2
 echo "Installing Vim"
 yes | sudo xbps-install -S vim
 
-echo "Installing Vim plugins"
-mv vimrc .vimrc
-mv .vimrc /home/$(whoami)
-cd /home/$(whoami)
-mkdir .vim
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
-
 echo "Installing Neofetch"
 yes | sudo xbps-install -S neofetch
+
+
+git clone https://github.com/thisSyntaxSucksAndYouKnowIt/config_files
+
+cd config_files
+mv xinitrc /etc/X11/xinit
+mv Xresources .Xresources
+mv .Xresources /home/$(whoami)
+mv vimrc .vimrc
+mv .vimrc /home/$(whoami)
+mkdir /home/$(whoami)/.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall

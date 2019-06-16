@@ -53,6 +53,7 @@ git clone https://github.com/thisSyntaxSucksAndYouKnowIt/config_files
 
 cd config_files
 sudo mv xinitrc /etc/X11/xinit
+mv config /home/$user_name/.config/i3
 mv Xresources .Xresources
 mv .Xresources /home/$user_name
 mv vimrc .vimrc

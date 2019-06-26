@@ -60,4 +60,5 @@ mv .vimrc /home/$user_name
 mkdir /home/$user_name/.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
+mkdir /home/$user_name/.config/i3
 mv config /home/$user_name/.config/i3

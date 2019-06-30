@@ -27,6 +27,9 @@ yes | sudo xbps-install -S dmenu
 echo "Installing i3 feh"
 yes | sudo xbps-install -S feh
 
+echo "Installing i3 ImageMagick"
+yes | sudo xbps-install -S ImageMagick
+
 echo "Installing dev tools"
 yes | sudo xbps-install -S base-devel
 

@@ -68,3 +68,5 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 mkdir /home/$user_name/.config/i3
 mv config /home/$user_name/.config/i3
+
+sudo ln -s /usr/share/fontconfig/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d

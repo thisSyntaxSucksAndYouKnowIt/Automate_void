@@ -25,6 +25,9 @@ echo "Installing dmenu"
 yes | sudo xbps-install -S dmenu
 
 echo "Installing i3 feh"
+yes | sudo xbps-install -S htop
+
+echo "Installing i3 feh"
 yes | sudo xbps-install -S feh
 
 echo "Installing i3 ImageMagick"
@@ -42,8 +45,8 @@ yes | sudo xbps-install -S python3
 echo "Installing Pip3"
 yes | sudo xbps-install -S python3-pip
 
-echo "Installing Radare2"
-yes | sudo xbps-install -S radare2
+echo "Installing Pip3"
+yes | sudo pip3 install pywal
 
 echo "Installing Vim"
 yes | sudo xbps-install -S vim

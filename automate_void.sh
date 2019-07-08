@@ -18,13 +18,16 @@ yes | sudo xbps-install -S rxvt-unicode
 echo "Installing i3 gaps"
 yes | sudo xbps-install -S i3-gaps
 
+echo "Installing polybar"
+yes | sudo xbps-install -S polybar
+
 echo "Installing i3 status"
 yes | sudo xbps-install -S i3status
 
 echo "Installing dmenu"
 yes | sudo xbps-install -S dmenu
 
-echo "Installing i3 feh"
+echo "Installing i3 htop"
 yes | sudo xbps-install -S htop
 
 echo "Installing i3 feh"

@@ -39,6 +39,12 @@ yes | sudo xbps-install -S font-awesome
 echo "Installing google fonts"
 yes | sudo xbps-install -S google-fonts-ttf
 
+echo "Installing nerd fonts"
+yes | sudo xbps-install -S nerd-fonts-ttf
+
+echo "Installing gucharmap"
+yes | sudo xbps-install -S gucharmap
+
 echo "Installing i3 ImageMagick"
 yes | sudo xbps-install -S ImageMagick
 

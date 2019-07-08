@@ -33,6 +33,12 @@ yes | sudo xbps-install -S htop
 echo "Installing i3 feh"
 yes | sudo xbps-install -S feh
 
+echo "Installing font awesome"
+yes | sudo xbps-install -S font-awesome
+
+echo "Installing google fonts"
+yes | sudo xbps-install -S google-fonts-ttf
+
 echo "Installing i3 ImageMagick"
 yes | sudo xbps-install -S ImageMagick
 

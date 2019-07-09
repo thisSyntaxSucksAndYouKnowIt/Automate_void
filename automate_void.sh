@@ -30,8 +30,11 @@ yes | sudo xbps-install -S dmenu
 echo "Installing i3 htop"
 yes | sudo xbps-install -S htop
 
-echo "Installing i3 feh"
+echo "Installing feh"
 yes | sudo xbps-install -S feh
+
+echo "Installing firefox"
+yes | sudo xbps-install -S firefox
 
 echo "Installing font awesome"
 yes | sudo xbps-install -S font-awesome
@@ -82,4 +85,6 @@ vim +PluginInstall +qall
 mkdir /home/$user_name/.config
 cp -r polybar /home/$user_name/.config
 cp -r i3 /home/$user_name/.config
+cp -r /home/$user_name/.vim/bundle/wal/colors/ /home/$user_name/.vim/
+
 sudo ln -s /usr/share/fontconfig/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d

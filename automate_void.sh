@@ -73,15 +73,13 @@ yes | sudo xbps-install -S neofetch
 git clone https://github.com/thisSyntaxSucksAndYouKnowIt/config_files
 
 cd config_files
-sudo mv xinitrc /etc/X11/xinit
-mv Xresources .Xresources
-mv .Xresources /home/$user_name
-mv vimrc .vimrc
-mv .vimrc /home/$user_name
+sudo cp xinitrc /etc/X11/xinit
+cp .Xresources /home/$user_name
+cp .vimrc /home/$user_name
 mkdir /home/$user_name/.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
-mkdir /home/$user_name/.config/i3
-mv config /home/$user_name/.config/i3
-
+mkdir /home/$user_name/.config
+cp -r polybar /home/$user_name/.config
+cp -r i3 /home/$user_name/.config
 sudo ln -s /usr/share/fontconfig/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d

@@ -18,6 +18,9 @@ yes | sudo xbps-install -S rxvt-unicode
 echo "Installing i3 gaps"
 yes | sudo xbps-install -S i3-gaps
 
+echo "Installing i3 lock"
+yes | sudo xbps-install -S i3-lock
+
 echo "Installing polybar"
 yes | sudo xbps-install -S polybar
 
@@ -48,7 +51,7 @@ yes | sudo xbps-install -S nerd-fonts-ttf
 echo "Installing gucharmap"
 yes | sudo xbps-install -S gucharmap
 
-echo "Installing i3 ImageMagick"
+echo "Installing ImageMagick"
 yes | sudo xbps-install -S ImageMagick
 
 echo "Installing dev tools"
@@ -63,8 +66,11 @@ yes | sudo xbps-install -S python3
 echo "Installing Pip3"
 yes | sudo xbps-install -S python3-pip
 
-echo "Installing Pip3"
+echo "Installing Pywal"
 yes | sudo pip3 install pywal
+
+echo "Installing Selenium"
+yes | sudo pip3 install selenium
 
 echo "Installing Vim"
 yes | sudo xbps-install -S vim

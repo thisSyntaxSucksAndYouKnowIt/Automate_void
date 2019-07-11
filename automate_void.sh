@@ -36,6 +36,9 @@ yes | sudo xbps-install -S htop
 echo "Installing feh"
 yes | sudo xbps-install -S feh
 
+echo "Installing scrot"
+yes | sudo xbps-install -S scrot
+
 echo "Installing firefox"
 yes | sudo xbps-install -S firefox
 

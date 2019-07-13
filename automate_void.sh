@@ -72,6 +72,9 @@ yes | sudo xbps-install -S python3-pip
 echo "Installing Pywal"
 yes | sudo pip3 install pywal
 
+echo "Installing Radare2"
+yes | sudo pip3 install radare2
+
 echo "Installing Selenium"
 yes | sudo pip3 install selenium
 

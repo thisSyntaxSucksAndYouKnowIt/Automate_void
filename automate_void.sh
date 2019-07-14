@@ -63,6 +63,9 @@ yes | sudo xbps-install -S base-devel
 echo "Installing wget"
 yes | sudo xbps-install -S wget
 
+echo "Installing zip"
+yes | sudo xbps-install -S zip
+
 echo "Installing Python3"
 yes | sudo xbps-install -S python3
 

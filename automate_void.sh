@@ -110,6 +110,7 @@ mkdir /home/$user_name/.config
 cp -r polybar /home/$user_name/.config
 cp -r i3 /home/$user_name/.config
 cp -r ranger /home/$user_name/.config
+cp -r neofetch /home/$user_name/.config
 cp -r /home/$user_name/.vim/bundle/wal/colors/ /home/$user_name/.vim/
 
 sudo ln -s /usr/share/fontconfig/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d

@@ -42,6 +42,15 @@ yes | sudo xbps-install -S scrot
 echo "Installing firefox"
 yes | sudo xbps-install -S firefox
 
+echo "Installing ranger"
+yes | sudo xbps-install -S ranger
+
+echo "Installing w3m"
+yes | sudo xbps-install -S w3m
+
+echo "Installing w3m img"
+yes | sudo xbps-install -S w3m-img
+
 echo "Installing font awesome"
 yes | sudo xbps-install -S font-awesome
 
@@ -100,6 +109,7 @@ vim +PluginInstall +qall
 mkdir /home/$user_name/.config
 cp -r polybar /home/$user_name/.config
 cp -r i3 /home/$user_name/.config
+cp -r ranger /home/$user_name/.config
 cp -r /home/$user_name/.vim/bundle/wal/colors/ /home/$user_name/.vim/
 
 sudo ln -s /usr/share/fontconfig/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d

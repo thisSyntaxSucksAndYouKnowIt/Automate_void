@@ -90,6 +90,9 @@ yes | sudo pip3 install radare2
 echo "Installing Selenium"
 yes | sudo pip3 install selenium
 
+echo "Installing youtube-dl"
+yes | sudo xbps-install -S youtube-dl
+
 echo "Installing Vim"
 yes | sudo xbps-install -S vim
 
@@ -104,6 +107,10 @@ sudo cp xinitrc /etc/X11/xinit
 cp .Xresources /home/$user_name
 cp .vimrc /home/$user_name
 mkdir /home/$user_name/.vim
+mkdir /home/$user_name/music
+mkdir /home/$user_name/documents
+mkdir /home/$user_name/images
+mkdir /home/$user_name/downloads
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 mkdir /home/$user_name/.config

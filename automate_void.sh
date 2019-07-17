@@ -93,6 +93,9 @@ yes | sudo pip3 install selenium
 echo "Installing youtube-dl"
 yes | sudo xbps-install -S youtube-dl
 
+echo "Installing ffmpeg"
+yes | sudo xbps-install -S ffmpeg
+
 echo "Installing Vim"
 yes | sudo xbps-install -S vim
 

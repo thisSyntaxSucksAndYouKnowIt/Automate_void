@@ -102,6 +102,8 @@ yes | sudo xbps-install -S vim
 echo "Installing Neofetch"
 yes | sudo xbps-install -S neofetch
 
+echo "Installing Xreader"
+yes | sudo xbps-install -S xreader
 
 git clone https://github.com/thisSyntaxSucksAndYouKnowIt/config_files
 
